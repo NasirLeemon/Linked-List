@@ -19,29 +19,29 @@
 //     }
 // }
 
-// class Node {
-//     constructor(value, next = null){
-//         this.value = value;
-//         this.next = next
-//     }
-// }
+class Node {
+    constructor(value, next = null){
+        this.value = value;
+        this.next = next
+    }
+}
 
-// class LinkedList {
-//     constructor(value){
-//         let node = new Node(value)
-//         this.head = node;
-//         this.tail = node;
-//     }
-//     append(value){
-//         // 1. create new node
-//         // 2. tail.next append
-//         // 3. update tail
-//         let node = new Node(value)
-//         this.tail.next = node;
-//         this.tail = node;
-//     }
-// }
+class LinkedList {
+    constructor(value){
+        let node = new Node(value)
+        this.head = node;
+        this.tail = node;
+    }
+    append(value){
+        // 1. create new node
+        // 2. tail.next append
+        // 3. update tail
+        let node = new Node(value)
+        this.tail.next = node;
+        this.tail = node;
+    }
+}
 
-// let list = new LinkedList(100, 200)
-// list.append(500)
-// console.log(list);
+let list = new LinkedList(100, 200)
+list.append(500)
+console.log(list);
